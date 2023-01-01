@@ -82,10 +82,15 @@ p {
     flex-wrap: wrap;
 }
 
-div {
-    background-color: black;
-    width: 1700px;
-}   
+
+
+hr{
+    position: absolute;
+    left: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 1700;
+}
 
 
 a:link {
@@ -129,12 +134,11 @@ span{
     background: linear-gradient(180deg, rgba(0,0,31,0.2) 0%, rgba(38, 0, 255, 0.5) 60%, rgba(107, 74, 255, 1) 100%);
     position: relative;
     z-index: 3;
-  }
+    width: 1700;
 
-.positioned {
-    position: absolute;
-    white-space: nowrap;
 }
+
+
 
 
 
@@ -153,6 +157,15 @@ span{
 
     
 }
+.box{
+    position: absolute;
+    z-index: 2;
+    background: black;
+    left: 100;
+    margin-top: 0;
+    margin-bottom: 0;
+    width: 1700;
+}
 .container{
-    width: 80vw;
+    width: 90vw;
 }
