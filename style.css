@@ -164,8 +164,7 @@ span{
     left: 100;
     margin-top: 0;
     margin-bottom: 0;
-    width: 1700;
+    max-width: 1700px;
 }
-.container{
-    width: 90vw;
-}
+
+
