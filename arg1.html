@@ -6,10 +6,32 @@
         
         <style>
             .maw{
-                position:fixed;
+                position:absolute;
+                left: 40%;
+                top: 20%;
                 width:0;
                 height:0;
 
+            }
+            .jaw{
+                position:fixed;
+                width:0;
+                height:0;
+            }
+            span{
+                animation: splashAnim 0.625s infinite;
+            } 
+            @keyframes splashAnim{
+                0%,50%,100% {
+                    
+                    
+                }
+                50%{
+                    transform:translateY(100);
+                }
+            }
+            body{
+                background-image: url(background4.gif);
             }
         </style>
     </head>
@@ -17,10 +39,18 @@
     
     <body>
         <embed src="audio/angels.mp3" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
-        <center>
 
+            
+            <div class ="maw">
                 <img src="img/mawtop.png">
-
-        </center>
+                <div class ="jaw">
+                    <span style>
+                        <img src="img/mawbottom.png">
+                    </span>
+                </div>
+            </div>
+            
+            
     </body>
+    
 </html>
