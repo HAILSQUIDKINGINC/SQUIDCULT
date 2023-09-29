@@ -7,14 +7,43 @@ body {
     background-image: url(background.png);
     padding-left: 90px;
     padding-top: 90px;
-    font-family: "Comic Sans MS", "Comic Sans", Arial;
-    font-size: 25px;
+    font-size: 30px;
     color: white;
     }
-    
-
-h1 { 
+div {
+    display:inline
+}
+ @font-face { font-family: Evora; src: url('Evora05.otf'); } 
+ .evora {
+    font-family: Evora
+  }
+  @font-face { font-family: NightmareStory; src: url('NightmareStory-BWV8V.ttf'); } 
+  .blood {
+     font-family: NightmareStory;
+     font-size: 35px;
+     color: red;
+   }
+   @font-face { font-family: RyukExtra; src: url('RyukExtra.ttf'); } 
+  .ryuk {
+     font-family: RyukExtra;
+   }
+   @font-face { font-family: death_font_ver1_0; src: url('death_font_ver1_0.ttf'); } 
+  .deathnote {
+     font-family: death_font_ver1_0
+   }
+   @font-face { font-family: CloisterBlack; src: url('CloisterBlack .ttf'); } 
+  .gothic {
+     font-family: CloisterBlack;
+   }
+ .impact {
     font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
+  }
+  .comicsans {
+    font-family: "Comic Sans MS", "Comic Sans", Arial;
+  }
+  
+  
+h1 { 
     font-size: 100px; 
     font-style: normal; 
     font-variant: normal; 
@@ -31,7 +60,6 @@ h1 {
         z-index: -1;
       }
 h2 { 
-    font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
     font-size: 85px; 
     font-style: normal; 
     font-variant: normal; 
@@ -40,7 +68,6 @@ h2 {
     font-weight: normal;
     }
 h3 { 
-    font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
     font-size: 70px; 
     font-style: normal; 
     font-variant: normal; 
@@ -49,7 +76,6 @@ h3 {
     font-weight: normal;
     }
 h4 { 
-    font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
     font-size: 55px; 
     font-style: normal; 
     font-variant: normal; 
@@ -58,7 +84,6 @@ h4 {
     font-weight: normal;
     }
 h5 { 
-    font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
     font-size: 40px; 
     font-style: normal; 
     font-variant: normal;  
@@ -67,7 +92,6 @@ h5 {
     font-weight: normal;
     }
 h6 { 
-    font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
     font-size: 25px; 
     font-style: normal; 
     font-variant: normal; 
