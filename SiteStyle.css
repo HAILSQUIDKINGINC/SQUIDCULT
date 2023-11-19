@@ -1,0 +1,66 @@
+
+body {
+    color: white;
+    }
+hr{
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    h1 { 
+        font-size: 100px; 
+        font-style: normal; 
+        font-variant: normal; 
+        margin: 0px;
+        font-weight: normal;
+        }
+        h2 { 
+            font-size: 85px; 
+            font-style: normal; 
+            font-variant: normal; 
+            margin: 0px;
+            font-weight: normal;
+            }
+        h3 { 
+            font-size: 70px; 
+            font-style: normal; 
+            font-variant: normal; 
+            margin: 0px;
+            font-weight: normal;
+            }
+        h4 { 
+            font-size: 55px; 
+            font-style: normal; 
+            font-variant: normal; 
+            margin: 0px;
+            font-weight: normal;
+            }
+        h5 { 
+            font-size: 40px; 
+            font-style: normal; 
+            font-variant: normal;  
+            margin: 0px;
+            font-weight: normal;
+            }
+        h6 { 
+            font-size: 25px; 
+            font-style: normal; 
+            font-variant: normal; 
+            margin: 0px;
+            font-weight: normal;
+            }
+            
+@font-face { font-family: Evora; src: url('Evora05.otf'); } 
+ .evora {
+    font-family: Evora
+  }
+.button {
+    background-color: blue;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+

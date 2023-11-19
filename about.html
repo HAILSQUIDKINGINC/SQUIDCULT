@@ -2,55 +2,132 @@
     <head>
         <title>GNOSUMSQUALMUD</title>
         <link rel="shortcut icon" type="x-icon" href="icon.png"/>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="SiteStyle.css" />
         <style>
-            .title{
-                color: rgb(0, 0, 0);
-            }
             body {
                 background-image: url(background5.gif);
             }
+
+            .container{
+                left: 50%;  height: fit-content; border: 1px solid rgb(255, 255, 255);  background-color: black;
+                margin-top: 60px;
+                margin-left: 100px;
+                margin-right: -20px;
+            }
+            .container_text{      
+                margin: 30px;
+            }
+            .quote{
+                margin: 40px;
+
+            }
+            .col{
+                width: 250px; height: 300px; background-color: black; float: left;
+                border: 1px solid white;
+            }
+            .back{
+                position: fixed;
+                z-index: 3;
+                left: 0%;
+                top: 0%;
+                width: 0;
+            }
+            .ted{
+                position: fixed;
+                z-index: 3;
+                right: 20%;
+                bottom: -10;
+                width: 0;
+            }
+
+            /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #ff0000;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid white;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  width: 250px;
+  display: none;
+  overflow: hidden;
+  background-color: #000000;
+  border: 1px solid white;
+}
+            
         </style>
     </head>
     <body>
         <embed src="audio/villainarc.mp3" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
 
+            <div class="ted">
+                <a href="about2.html"><img src="img/ted.png" width="300"></a>
+            </div>
+
+
+
+
+
+            <div class="back">
             <form>
                 <input type="button" class="button" value="BACK
             ↵" onclick="history.go(-1)">
             </form>
-    <div class ="box">
-        <div class="container">
-            <p>
-                Instead of compromising socio-political policies (Cringe pacifistic nonsense)the GOYIM (alcoholics, druggies, rapists, criminals, smokers) must ALL be slaughtered.
-            They must be blown to a trillion smithereens by the Ashkenazi trans-continental space lasers, for they serve no purpose other than satisfying the greedy and DEGENERATED desires of the KIKES, they are the absolute brainless, spineless (In the cases of druggies, literally) UNTERMENSCH.
-            It's like Heinrich Himmler from Blade Note, i mean Blade Runner, leave ONLY the giga-Aryan mega-sludgebeast Ubermensch masterminds alive, and boom, no need for laws and all of the ZOG GIB totalitarian nonsense.
-            CRUSH their skulls in with hammers, INCINERATE them alive, DESTROY the goyim, leave ONLY the UBER-goyim.
-<br><br>
-                <b>Squidcultism</b> is a culturally right ideology that advocates for a globalist anti industrialist environmentalist transhumanist galactical esoteric dictatorship 
-            and total eradication of minority's in a big reset of the earth via nuclear hellfire (the trees will be fine)<br><br>
-            <i>"We will blend all the NORMALS and suboptimalhumans and spray it upon the deserts so that the rainforests may grow."</i>
-            <img src="img/hitlerswag.png"  width="600"> <img src="img/ted.png"  width="600"><br>
-            <hr>
-            <h2>Consciousness</h2>
-            Consciousness must be preserved at all costs, anything that makes you weaker is bad, things are either good or evil, it is black and white, 
-            things can be a net positive or net negative, being wishy washy with your "grey areas" that's for fluoridated retarded NPCog NORMALS.
+            </div>
+
+    <div class ="container"><div class ="container_text">
+    
+            <div class="evora"><h2>Squidcultism</h2></div> <hr>
+
+            <div class ="quote"><i>"We will blend all the NORMALS and suboptimalhumans and spray it upon the deserts so that the rainforests may grow."</i><br><img src="smiley/emoji_king.png">- Squidking</div>
+            <p>Instead of compromising socio-political policies (Cringe pacifistic nonsense)the GOYIM (alcoholics, druggies, rapists, criminals, smokers) must ALL be slaughtered.
+                They must be blown to a trillion smithereens by the Ashkenazi trans-continental space lasers, for they serve no purpose other than satisfying the greedy and DEGENERATED desires of the KIKES, they are the absolute brainless, spineless (In the cases of druggies, literally) UNTERMENSCH.
+                It's like Heinrich Himmler from Blade Note, i mean Blade Runner, leave ONLY the giga-Aryan mega-sludgebeast Ubermensch masterminds alive, and boom, no need for laws and all of the ZOG GIB totalitarian nonsense.
+                CRUSH their skulls in with hammers, INCINERATE them alive, DESTROY the goyim, leave ONLY the UBER-goyim.</p>
+ 
+                
+
+            <button type="button" class="collapsible">Cøntents</button>
+            <div class="content">
+            <a href="#The Jews">The Jews</a><br>
+            </div>
+            <br>
             
-            <h2>The Jews</h2>
-            The jews control all the media, banks, governments, companies, and the pharmaceutical industry, military industrial complex, et cetera.
+
+           
+            <img src="img/hitlerswag.png"  width="600"> 
+            <hr>
+           <h5>Consciousness</h5>
+           <p>Consciousness must be preserved at all costs, anything that makes you weaker is bad, things are either good or evil, it is black and white, 
+            things can be a net positive or net negative, being wishy washy with your "grey areas" that's for fluoridated retarded NPCog NORMALS.</p>
+            
+            <h5 id="The Jews">The Jews</h2>
+            <p>The jews control all the media, banks, governments, companies, and the pharmaceutical industry, military industrial complex, et cetera.
             their goal is to increase entropy. this basically means death, they want to destroy all life, and diversity, merge everything into oblivion. 
             destroy any sense of meaning.
             this will lead to all of humanity to becoming a mixed race, goblin creatures for them to manipulate easily, to build their pyramids and temples
             And by pyramids i mean abortion centers, and by temples i mean Walmarts and parking lots, of course. Jews are demonic.
             The jews are very egotistical and get a sadistic sort of pleasure out of flaunting their power, 99.9% of humanity is so retarded that they won't even notice this
             99.9% of humanity should not exist, and should get the genocide, these subhumans contaminate the gene pool, slowly all conscious freethinking humans will disappear, 
-            this is what will happen if those who can see, do not unify to secure hyperborea, and a future for chuds, nature, and humanity in general.
+            this is what will happen if those who can see, do not unify to secure hyperborea, and a future for chuds, nature, and humanity in general.</p>
             
-            <h2>Evil.</h2>
+            <h5>Evil.</h2>
             Evil must be deleted at all costs, and if you are aware of evil, and do nothing to stop it, no matter the sacrifice, you are evil yourself, for good to prevail, action is required. the "Humans" that are incapable of free thought, with shallow personalities and morals that come entirely from what's socially expected ARE evil
             and so they must be deleted. be a vigilante, not a system cuck 
 
-            <h2> Jews (part 2)</h2>
+            <h5> Jews (part 2)</h2>
             Jews want to exterminate you and eliminate your consciousness, they do this through poisoning, through media, food, water, and "medicine"
             Do not drink fluoridated water, do NOT eat processed food, do NOT eat MSG, vegetable oil, rice, corn, soy, et cetera.
             Don't eat at restaurants, fast food is out of the question, and if an ingredients list contains mystery factory chemicals, it's poison. 
@@ -64,7 +141,25 @@
             
 
              </p>
-        </div>
-      </div>
+
+
+            </div></div>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+            </script>
     </body>
 </html>

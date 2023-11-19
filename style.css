@@ -204,6 +204,9 @@ span{
     margin-top: 0;
     margin-bottom: 0;
     max-width: 1700px;
+    p.solid {border-style: solid;}
+    border:1px red;
+    
 }
 
 
