@@ -2,34 +2,125 @@
     <head>
         <title>GNOSUMSQUALMUD</title>
         <link rel="shortcut icon" type="x-icon" href="icon.png"/>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="SiteStyle.css" />
         <style>
-            .title{
-                color: rgb(0, 0, 0);
-            }
             body {
-                background-image: url(background5.gif);
+                background-image: url(background6.gif);
             }
+
+            
+
+
+        
+
+            /* Style the button that is used to open and close the collapsible content */
+.collapsible {
+  background-color: #ff0000;
+  color: #000000;
+  cursor: pointer;
+  padding: 10px;
+  width: 250px;
+  border: 1px solid white;
+  text-align: center;
+  outline: none;
+  font-size: 20px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  width: 250px;
+  display: none;
+  overflow: hidden;
+  background-color: #000000;
+  border: 1px solid white;
+}
+            
         </style>
     </head>
     <body>
         <embed src="audio/villainarc.mp3" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
+            
 
+
+            
+
+
+
+            <div class="back">
             <form>
                 <input type="button" class="button" value="BACK
             ↵" onclick="history.go(-1)">
             </form>
-    <div class ="box">
-        <div class="container">
-            <p>
-                Imagine a realm, untouched by Judaic entropy, a realm where perpetual serenity, prosperity and all that is splendid reign triumphant over senseless chaos instigated by the Enslaver to tear apart Eden piece by piece with no regard for God, Nature and Humanity.
-A realm where blooming, thriving trees tower over land that long-ago used to be empty wastelands, a realm where the seed of Eden has sprung it's roots everywhere, creating a biosphere most optimal for the Aryan race to thrive in. The biggest obstacle to the forging of such a world are the sub-humans, the Swarthoids, the deformed, spineless "creatures", if they can even be considered creatures. They have no perception of a thriving and prosperous realm forged by discipline and obedience, as they physiologically can NOT perceive it, trying to reason and compromise with the aforementioned types could be compared to the desperate and dire attempt to grasp onto a fish out of water, the slimy, repulsive mucus that covers their realm of thought will purposefully not let in the thoughts that truly matter, that hold a meaning, they CAN'T perceive meaning, they CAN'T perceive subtlety, they are abominations "driven" by sheer impulse, not even hatred or greed, but sheer impulse.
-<br><br>
-            As for the normcucks, who could be compared in regards of their IQ level to the subhumans, they too have NO perception, the normcucks, unlike subhumans however, are not driven COMPLETELY by impulse, while senseless impulse does in fact make up a rather large portion of their brain cortex, they also exhibit urges of greed, lust, gluttony, laziness, decay and irritation. The normcucks and sub-humans are directly contradictory to the natural order that has been reigning over Earth for billions of years, their immediate line of thought in this specific scenario would be: "B-but i don't want to be eaten by a tiger!". Their immediate, deep-rooted reaction to anything even slightly out of their ordinary, out of the status quo, untouched by Judaic entropy, is fear, fear and anger, for they FEAR God's might crushing them like an elephant stepping on vermin, and they are vermin, they feast upon the fruits of slave labour of the Aryan race with little to no thought to it, they have no consistent trajectory of thought, and in general, they DON'T even HAVE thought, their "thought" is mere reciprocation of a subject they have been told is "good" or "beneficial" to the Judaic industrial MACHINE that constricts the ARYAN race, destined by God to inherit Eden, like a SNAKE.
+            </div>
+
+    <div class ="container"><div class ="container_text">
+    
+
+            <p>Imagine a realm, untouched by Judaic entropy, a realm where perpetual serenity, prosperity and all that is splendid reign triumphant over senseless chaos instigated by 
+                the Enslaver to tear apart Eden piece by piece with no regard for God, Nature and Humanity.
+                A realm where blooming, thriving trees tower over land that long-ago used to be empty wastelands, a realm where the seed of Eden has sprung it's roots everywhere, 
+                creating a biosphere most optimal for the Aryan race to thrive in. The biggest obstacle to the forging of such a world are the sub-humans, the Swarthoids, 
+                the deformed, spineless "creatures", if they can even be considered creatures. They have no perception of a thriving and prosperous realm forged by discipline 
+                and obedience, as they physiologically can NOT perceive it, trying to reason and compromise with the aforementioned types could be compared to the desperate 
+                and dire attempt to grasp onto a fish out of water, the slimy, repulsive mucus that covers their realm of thought will purposefully not let in the thoughts 
+                that truly matter, that hold a meaning, they CAN'T perceive meaning, they CAN'T perceive subtlety, they are abominations "driven" by sheer impulse, not even 
+                hatred or greed, but sheer impulse.</p>
             
 
+           <p>As for the normcucks, who could be compared in regards of their IQ level to the subhumans, they too have NO perception, the normcucks, unlike subhumans however, 
+            are not driven COMPLETELY by impulse, while senseless impulse does in fact make up a rather large portion of their brain cortex, they also exhibit urges of greed, 
+            lust, gluttony, laziness, decay and irritation. The normcucks and sub-humans are directly contradictory to the natural order that has been reigning over Earth for 
+            billions of years, their immediate line of thought in this specific scenario would be: "B-but i don't want to be eaten by a tiger!". Their immediate, deep-rooted 
+            reaction to anything even slightly out of their ordinary, out of the status quo, untouched by Judaic entropy, is fear, fear and anger, for they FEAR God's might 
+            crushing them like an elephant stepping on vermin, and they are vermin, they feast upon the fruits of slave labour of the Aryan race with little to no thought to 
+            it, they have no consistent trajectory of thought, and in general, they DON'T even HAVE thought, their "thought" is mere reciprocation of a subject they have been 
+            told is "good" or "beneficial" to the Judaic industrial MACHINE that constricts the ARYAN race, destined by God to inherit Eden, like a SNAKE.</p>
              </p>
-        </div>
-      </div>
+
+
+            </div></div>
+            
+            <script>
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+            });
+            }
+
+            
+            let specifics = document.querySelectorAll(".ted");
+
+let audios = ["audio/loon.mp3"];
+
+for(i = 0; i < specifics.length; i++){
+	let specific = specifics[i];
+  
+  let audio = document.createElement("audio");
+  audio.src = audios[i];
+  document.body.appendChild(audio);
+
+  specific.onmouseover = () => {
+    audio.play();
+  }
+  specific.onmouseout = () => {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+}
+            </script>
     </body>
 </html>

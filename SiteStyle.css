@@ -63,4 +63,28 @@ hr{
   display: inline-block;
   font-size: 16px;
 }
+.container{
+    left: 50%;  height: fit-content; border: 1px solid rgb(255, 255, 255);  background-color: black;
+    margin-top: 60px;
+    margin-left: 100px;
+    margin-right: -20px;
+}
+.container_text{      
+    margin: 30px;
+}
+.quote{
+    margin: 40px;
+
+}
+.col{
+    width: 250px; height: 300px; background-color: black; float: left;
+    border: 1px solid white;
+}
+.back{
+    position: fixed;
+    z-index: 3;
+    left: 0%;
+    top: 0%;
+    width: 0;
+}
 

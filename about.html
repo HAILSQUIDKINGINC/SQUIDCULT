@@ -7,38 +7,16 @@
             body {
                 background-image: url(background5.gif);
             }
-
-            .container{
-                left: 50%;  height: fit-content; border: 1px solid rgb(255, 255, 255);  background-color: black;
-                margin-top: 60px;
-                margin-left: 100px;
-                margin-right: -20px;
-            }
-            .container_text{      
-                margin: 30px;
-            }
-            .quote{
-                margin: 40px;
-
-            }
-            .col{
-                width: 250px; height: 300px; background-color: black; float: left;
-                border: 1px solid white;
-            }
-            .back{
-                position: fixed;
-                z-index: 3;
-                left: 0%;
-                top: 0%;
-                width: 0;
-            }
             .ted{
                 position: fixed;
-                z-index: 3;
-                right: 20%;
-                bottom: -10;
-                width: 0;
-            }
+                bottom: -50px;
+                right: 0%;
+                width: 256px; 
+            height: 256px; 
+            margin: 50px; 
+        } 
+
+        
 
             /* Style the button that is used to open and close the collapsible content */
 .collapsible {
@@ -70,13 +48,17 @@
         </style>
     </head>
     <body>
-        <embed src="audio/villainarc.mp3" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
-
+        <embed src="audio/In_Lonelienes_disintegration.mp3" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
+            
             <div class="ted">
-                <a href="about2.html"><img src="img/ted.png" width="300"></a>
+                <a href="about2.html">
+                    <img src="img/ted.png"
+                         onmouseover="this.src='img/ted2.png';"
+                         onmouseout="this.src='img/ted.png';">
+                </a>
             </div>
 
-
+            
 
 
 
@@ -160,6 +142,27 @@
                 }
             });
             }
+
+            
+            let specifics = document.querySelectorAll(".ted");
+
+let audios = ["audio/loon.mp3"];
+
+for(i = 0; i < specifics.length; i++){
+	let specific = specifics[i];
+  
+  let audio = document.createElement("audio");
+  audio.src = audios[i];
+  document.body.appendChild(audio);
+
+  specific.onmouseover = () => {
+    audio.play();
+  }
+  specific.onmouseout = () => {
+    audio.pause();
+    audio.currentTime = 0;
+  }
+}
             </script>
     </body>
 </html>
