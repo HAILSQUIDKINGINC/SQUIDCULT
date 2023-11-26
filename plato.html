@@ -2,7 +2,7 @@
     <head>
         <title>ST Fagotsburg Archives</title>
         <link rel="shortcut icon" type="x-icon" href="icon.png"/>
-        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="SiteStyle.css" />
         <style>
             .title{
                 color: rgb(0, 0, 0);
@@ -10,17 +10,57 @@
             body {
                 background-image: url(background3.png);
             }
+            
+            .collapsible {
+  background: transparent;
+  border: none !important;
+  cursor: pointer;
+  color: blue;
+  padding: 0px;
+  text-align: left;
+}
+.box{
+  width: fit-content;
+  border: 1px solid white;
+  padding: 0px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active, .collapsible:hover {
+  color: white;
+}
+
+/* Style the collapsible content. Note: hidden by default */
+.content {
+  width: fit-content;
+  display: none;
+  overflow: hidden;
+  text-align: left;
+}
         </style>
     </head>
     <body>
      
-<a href="home.html">INDEX<br>↵</a>
+      <div class="back">
+        <form>
+            <input type="button" class="button" value="BACK
+        ↵" onclick="history.go(-1)">
+        </form>
+        </div>
 
-    <div class ="box">
-        <div class="container">
-              CINEMA
+    <div class ="containercenter">
+              <div class="gothic">Cinema und Great vvorks of platory production and moralballs</div>
+              <div class="box">
+                <button type="button" class="collapsible"><h5>ㅤㅤㅤcøntentsㅤㅤㅤ</h5><hr></button>
+                <div class="content">
+                  <a href="#Grogbe">Grogbe</a><br>
+                  <a href="#Squidking">SquidKing</a><br>
+                  <a href="#Blitzkreiger">Blitzkreiger</a><br>
+                </div></div>
+                <br>
+
                 <br><br>
-                <div class ="deathnote"><font color="grey"><h1>grOGbe aRCHiVe</font></h1></div>
+                <div class ="deathnote"><font color="grey"><h1 id="Grogbe">grOGbe aRCHiVe</font></h1></div>
                 <br>
 
                 <video height="720" controls="controls">
@@ -76,7 +116,7 @@
 
 
                 <br><br>
-                <div class ="evora"><font color="#4d59c5"><h1>SQUIDKING ARCHIVE</font></h1></div>
+                <div class ="evora"><font color="#4d59c5"><h1 id="Squidking">SQUIDKING ARCHIVE</font></h1></div>
                 <br>
                 <video height="720" controls="controls">
                     <source src="plato/Youcannotkillavision_compressed.mp4" type="video/mp4" />
@@ -160,7 +200,7 @@
 
 
                   <br><br>
-                <div class ="blood"><h1>BLITZKREIGER ARCHIVE</h1></div>
+                <div class ="blood"><h1 id="Blitzkreiger">BLITZKREIGER ARCHIVE</h1></div>
                 <br>
                 <video height="720" controls="controls">
                     <source src="plato/oontermensch.mp4" type="video/mp4" />
@@ -290,7 +330,25 @@
                 <br><br><hr><br><br>
                 
 
+                
+
         </div>
-      </div>
+        <script>
+          var coll = document.getElementsByClassName("collapsible");
+          var i;
+
+          for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+              this.classList.toggle("active");
+              var content = this.nextElementSibling;
+              if (content.style.display === "block") {
+              content.style.display = "none";
+              } else {
+              content.style.display = "block";
+              }
+          });
+          }
+          </script>
     </body>
 </html>
+

@@ -28,58 +28,107 @@ hr{
             font-weight: normal;
             }
         h4 { 
-            font-size: 55px; 
+            font-size: 40px; 
             font-style: normal; 
             font-variant: normal; 
             margin: 0px;
             font-weight: normal;
             }
         h5 { 
-            font-size: 40px; 
+            font-size: 25px; 
             font-style: normal; 
             font-variant: normal;  
             margin: 0px;
             font-weight: normal;
             }
+            @font-face { font-family: NightmareStory; src: url('NightmareStory-BWV8V.ttf'); } 
         h6 { 
-            font-size: 25px; 
+            font-family: NightmareStory;
+            font-size: 35px;
+            color: red;
+            font-size: 20px; 
             font-style: normal; 
             font-variant: normal; 
             margin: 0px;
             font-weight: normal;
+            display: inline;
+            text-shadow:
+    0 0 7px #ff0000;
             }
             
+            a:link {
+                color: blue;
+            }
+            
+            a:hover {
+                color: royalblue;
+            }
+            
+            a:visited {
+                color: blue;
+            }
 @font-face { font-family: Evora; src: url('Evora05.otf'); } 
  .evora {
     font-family: Evora
   }
+  @font-face { font-family: RyukExtra; src: url('RyukExtra.ttf'); } 
+  .ryuk {
+     font-family: RyukExtra;
+   }
+   @font-face { font-family: death_font_ver1_0; src: url('death_font_ver1_0.ttf'); } 
+  .deathnote {
+     font-family: death_font_ver1_0
+   }
+   @font-face { font-family: CloisterBlack; src: url('CloisterBlack .ttf'); } 
+  .gothic {
+     font-family: CloisterBlack;
+   }
+ .impact {
+    font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
+  }
+  .comicsans {
+    font-family: "Comic Sans MS", "Comic Sans", Arial;
+  }
 .button {
     background-color: blue;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
+    color: white;
 }
 .container{
     left: 50%;  height: fit-content; border: 1px solid rgb(255, 255, 255);  background-color: black;
     margin-top: 60px;
     margin-left: 100px;
     margin-right: -20px;
+    padding: 40px;
 }
-.container_text{      
-    margin: 30px;
+.containercenter{
+    border: 1px solid rgb(255, 255, 255);  background-color: black; padding: 40px; margin-top: 60px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    text-align: center;
+}
+.p{
+    width: fit-content; height: fit-content; float: right;
+    padding: 40px;
 }
 .quote{
     margin: 40px;
 
 }
 .col{
-    width: 250px; height: 300px; background-color: black; float: left;
+    width: fit-content; height: fit-content; background-color: black; float: right;
     border: 1px solid white;
+    
 }
+.floatleft{
+    float: left;
+    
+}
+.floatright{
+    float: right; 
+}
+
+
 .back{
     position: fixed;
     z-index: 3;
