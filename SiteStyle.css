@@ -12,6 +12,7 @@ hr{
         font-variant: normal; 
         margin: 0px;
         font-weight: normal;
+        display: inline;
         }
         h2 { 
             font-size: 85px; 
@@ -19,6 +20,7 @@ hr{
             font-variant: normal; 
             margin: 0px;
             font-weight: normal;
+            display: inline;
             }
         h3 { 
             font-size: 70px; 
@@ -26,6 +28,7 @@ hr{
             font-variant: normal; 
             margin: 0px;
             font-weight: normal;
+            display: inline;
             }
         h4 { 
             font-size: 40px; 
@@ -33,6 +36,7 @@ hr{
             font-variant: normal; 
             margin: 0px;
             font-weight: normal;
+            display: inline;
             }
         h5 { 
             font-size: 25px; 
@@ -40,11 +44,11 @@ hr{
             font-variant: normal;  
             margin: 0px;
             font-weight: normal;
+            display: inline;
             }
             @font-face { font-family: NightmareStory; src: url('NightmareStory-BWV8V.ttf'); } 
         h6 { 
             font-family: NightmareStory;
-            font-size: 35px;
             color: red;
             font-size: 20px; 
             font-style: normal; 
@@ -69,26 +73,129 @@ hr{
             }
 @font-face { font-family: Evora; src: url('Evora05.otf'); } 
  .evora {
-    font-family: Evora
+    font-family: Evora;
+    display: inline;
   }
   @font-face { font-family: RyukExtra; src: url('RyukExtra.ttf'); } 
   .ryuk {
      font-family: RyukExtra;
+     font-size: 20px; 
+     display: inline;
    }
    @font-face { font-family: death_font_ver1_0; src: url('death_font_ver1_0.ttf'); } 
   .deathnote {
-     font-family: death_font_ver1_0
+     font-family: death_font_ver1_0;
+     display: inline;
    }
    @font-face { font-family: CloisterBlack; src: url('CloisterBlack .ttf'); } 
   .gothic {
      font-family: CloisterBlack;
+     display: inline;
    }
  .impact {
     font-family: "Impact", "Haettenschweiler", "Arial Black", "sans serif"; 
+    display: inline;
   }
   .comicsans {
     font-family: "Comic Sans MS", "Comic Sans", Arial;
+    display: inline;
   }
+  .blood { 
+    font-family: NightmareStory;
+    color: red;
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    margin: 0px;
+    font-weight: normal;
+    display: inline;
+    text-shadow: 0 0 7px #ff0000;
+    }
+.nightmare { 
+    font-family: NightmareStory;
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    margin: 0px;
+    font-weight: normal;
+    display: inline;
+    }
+    .yellow { 
+        color: rgb(238, 255, 0);
+        font-style: normal; 
+        font-variant: normal; 
+        margin: 0px;
+        font-weight: normal;
+        display: inline;
+    
+        }
+        .brown { 
+            color: rgb(63, 46, 0);
+            font-style: normal; 
+            font-variant: normal; 
+            margin: 0px;
+            font-weight: normal;
+            display: inline;
+        
+            }
+            .red { 
+                color: rgb(255, 0, 0);
+                font-style: normal; 
+                font-variant: normal; 
+                margin: 0px;
+                font-weight: normal;
+                display: inline;
+            
+                }
+  @font-face { font-family: Stencil; src: url('stencil.ttf'); } 
+  .glowie { 
+    font-family: Stencil;
+    color: rgb(0, 0, 0);
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    margin: 0px;
+    font-weight: normal;
+    display: inline;
+    text-shadow: 0 0 7px rgb(0, 255, 0);
+    }
+    .glowie_ryuk { 
+        font-family: RyukExtra;
+        color: rgb(0, 255, 0);
+        font-size: 20px; 
+        font-style: normal; 
+        font-variant: normal; 
+        margin: 0px;
+        font-weight: normal;
+        display: inline;
+        text-shadow: 0 0 7px rgb(0, 255, 0);
+        }
+    @font-face { font-family: Stencil Regular; src: url('Stencil\ Regular.ttf'); } 
+    .epstein { 
+        font-family: Stencil Regular;
+        color: rgb(0, 4, 255);
+        font-size: 20px; 
+        font-style: normal; 
+        font-variant: normal; 
+        margin: 0px;
+        font-weight: normal;
+        display: inline;
+        text-shadow: 0 0 7px rgb(0, 4, 255);
+        }
+   .glow_red { 
+        text-shadow:0 0 7px #ff0000;
+        }
+    .neffy { 
+        font-family: CloisterBlack;
+        color: rgb(0, 0, 0);
+        font-size: 20px; 
+        font-style: normal; 
+        font-variant: normal; 
+        margin: 0px;
+        font-weight: normal;
+        display: inline;
+        text-shadow:1px 0 2px #ff0000,-1px 0 2px #ff0000, 0 1px 2px #ff0000,0 -1px 2px #ff0000;
+        }
 .button {
     background-color: blue;
     color: white;
