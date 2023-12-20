@@ -147,6 +147,15 @@ hr{
                 display: inline;
             
                 }
+                .black { 
+                    color: rgb(0, 0, 0);
+                    font-style: normal; 
+                    font-variant: normal; 
+                    margin: 0px;
+                    font-weight: normal;
+                    display: inline;
+                
+                    }
   @font-face { font-family: Stencil; src: url('stencil.ttf'); } 
   .glowie { 
     font-family: Stencil;
