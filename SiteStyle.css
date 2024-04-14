@@ -71,6 +71,11 @@ hr{
             a:visited {
                 color: blue;
             }
+            .center{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+             }
 @font-face { font-family: Evora; src: url('Evora05.otf'); } 
  .evora {
     font-family: Evora;

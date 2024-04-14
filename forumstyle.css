@@ -1,0 +1,174 @@
+/* Globalls */
+*{
+   box-sizing: border-box;
+}
+
+html{
+    font-size: 14px;
+    color: white;
+    background-color: black;
+}
+
+a:visited {
+    color: red;
+}
+
+a{
+    color: red;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    color: darkred;
+}
+
+h1{
+    font-size: 16px;
+    font-weight: bolder;
+}
+/* home HTML */
+
+.container {
+    padding: 20px;
+    margin: 20px;
+}
+.subforum {
+    margin-top: 20px;
+}
+.subforum-title {
+    background: url("NAZI.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    padding: 5px;
+    margin: 4px;
+}
+.subforum-description *{
+    margin-block: 0px;
+}
+.subforum-row {
+    display: grid;
+    grid-template-columns: 7% 60% 13% 20%;
+}
+.subforum-column{
+    padding: 10px;
+    margin: 4px;
+    background-color: rgb(20, 20, 20);
+}
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* navbar */
+header{
+    margin-inline: 10px;
+    image-rendering: pixelated;
+    image-rendering: -moz-crisp-edges;
+    image-rendering: crisp-edges;
+}
+
+.navbar{
+    display:flex;
+    align-items: center;
+}
+
+.navigation{
+    background: url("NAZI.webp") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    padding: 10px;
+    width: 65%;
+    display: inline-block;
+    max-height: 80px;
+    margin-right: 10px;
+}
+
+.nav-list{
+    list-style-type: none;
+    overflow: hidden;
+}
+
+.nav-item a{
+    float: right;
+    display: block;
+    text-align: center;
+    margin-inline: 20px;
+    font-size: 20px;
+    color: white;
+}
+
+.nav-item a:hover{
+    background-color: rgb(0,0,0,0.1);
+}
+
+.close-icon{
+    font-size: 60px;
+    float: left;
+    cursor: pointer;
+}
+
+.hide{
+    display: none;
+}
+
+.bar-icon{
+    font-size: 60px;
+    display: inline-block;
+    margin-right: 10px;
+    color: white;
+    cursor: pointer;
+}
+@font-face { font-family: Evora; src: url('Evora05.otf'); } 
+.brand{
+    font-size: 90px;
+    display: inline-block;
+    font-family: Evora;
+    color: red;
+    text-shadow: 0 0 7px #ff0000;
+}
+
+/*Search Box*/
+.search-box{
+    border:solid 1px white;
+    display: flex;
+    justify-content: center;
+}
+.search-box select{
+    border: none;
+    padding: 35px;
+    background-color: black;
+    color: white;
+}
+.search-box select:hover{
+    background-color: rgb(22, 22, 22);
+}
+.search-box input{
+    border: none;
+    padding: 35px;
+    background-color: black;
+    color: white;
+}
+.search-box input:hover{
+    background-color: rgb(22, 22, 22);
+}
+.search-box button{
+    border: none;
+    border-left:solid 1px white;
+    border-right:solid 1px white;
+    padding: 40px;
+    background: url("widgetsearch.webp") no-repeat center center;
+    -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+    background-color: black;
+}
+.search-box button:hover{
+    background-color: rgb(22, 22, 22);
+}
