@@ -4,7 +4,7 @@
 
         <style> 
                 body {
-                    background-color: grey;
+                    background-color: rgb(255, 255, 255);
                     padding-left: 90px;
                     padding-top: 90px;
                     font-family: "Comic Sans MS", "Comic Sans", Arial;
@@ -13,34 +13,53 @@
                     }
                 .wewcome{
                     color: pink;
+                    text-align: center;
                 }
-                .autism{
-                position: absolute;
-                z-index: 3;
-                left: 162;
-                width: 100%;
-                width: 0;
-                z-index: -10;
-                #bg {
-                    position: fixed;
-                    right: 0;
-                    bottom: 0;
-                    min-width: 100%;
-                    min-height: 100%;
+                .cover {
+                background-image: url(autismcreatureloop.gif);
+                background-size:cover;
+                background-repeat:no-repeat;
+                width:100%;
+                padding-bottom:50%;
+                margin-bottom:50px;
+                video {
+                    opacity:0;
+                    width:100%;
+                    transition: 1s;
+                    position:absolute;
+                    z-index:-1;
+                    
                 }
-            }
+                }
+
         </style>
     </head>
+    
     <body>
-        <embed src="decapitatedcupidv2.ogg" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
-        <div class="autism">
-            <video autoplay muted id="bg">
-                    <source src="decapitatedcupidv2.mp4" type="video/mp4" />
-                  Your browser does not support video
-            </video>
-        </div>
-        <div class="wewcome"> UwU... wewcome to owr website kekekekeke </div><br>
-        <a href="home.html">Click for wholesome reddit gold</a>
-        
+        <div class = 'cover'> 
+            <video controls class = 'video' width = '600'>
+                            <source src="deathtoautismcreature.mp4" type="video/mp4" />
+                            <source src="audio/crushed.mp3" />
+                            <img src="autismcreatureloop.gif" id="fix">
+                     </video> 
+          </div>
+          <div class="wewcome"> <:D We're all silly lil' guys, click for some wholesome fun!</div><br>
     </body>
+
+
+
+    <script>
+        $('.cover').on('click', function () {
+            $(this).children().css({
+              'z-index' : 1,
+              'opacity': 1
+            });
+          $(this).children().trigger('play');
+             
+        });
+        
+        $('video').on('click', function () {
+          console.log('a');
+        });
+        </script>
 </html>

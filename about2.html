@@ -1,6 +1,6 @@
 <html>
     <head>
-        <title>GNOSUMSQUALMUD</title>
+        <title>ᛉ</title>
         <link rel="shortcut icon" type="x-icon" href="icon.png"/>
         <link rel="stylesheet" href="SiteStyle.css" />
         <style>
@@ -8,8 +8,29 @@
                 background-image: url(background6.gif);
             }
 
-            
-
+            .glowingpower{
+                position: fixed;
+                bottom: -50;
+                left: 50%;
+                width: fit-content;
+                mix-blend-mode: screen;
+                z-index: 2;
+                
+            }
+            #fix,#fix2{
+              -webkit-transform: translateX(-50%) ;
+               transform: translateX(-50%) ;
+               width: fit-content;
+            }
+            .glowingpowershade{
+                position: fixed;
+                bottom: -50;
+                left: 50%;
+                width: fit-content;
+                mix-blend-mode: darken;
+                z-index: 1;
+                
+            }
 
         
 
@@ -48,7 +69,17 @@
 
 
             
-
+            
+              <div class="glowingpower">
+                <video autoplay muted loop id="fix">
+                  <source src="img/glowingpower.mp4" type="video/mp4">
+                </video>
+              </div>
+              <div class="glowingpowershade">
+                <video autoplay muted loop id="fix2">
+                  <source src="img/glowingpowershade.mp4" type="video/mp4">
+                </video>
+              </div>
 
 
             <div class="back">
@@ -86,41 +117,17 @@
             </div></div>
             
             <script>
-            var coll = document.getElementsByClassName("collapsible");
-            var i;
+              var glowingpower = document.getElementById("fix");
+              var glowingshade = document.getElementById("fix2");
+          
+              var change_time_state = true;
+          
+              glowingpower.onplaying = function(){
+                      glowingshade.currentTime = glowingpower.currentTime;
+                      
+              }
 
-            for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                content.style.display = "none";
-                } else {
-                content.style.display = "block";
-                }
-            });
-            }
 
-            
-            let specifics = document.querySelectorAll(".ted");
-
-let audios = ["audio/loon.mp3"];
-
-for(i = 0; i < specifics.length; i++){
-	let specific = specifics[i];
-  
-  let audio = document.createElement("audio");
-  audio.src = audios[i];
-  document.body.appendChild(audio);
-
-  specific.onmouseover = () => {
-    audio.play();
-  }
-  specific.onmouseout = () => {
-    audio.pause();
-    audio.currentTime = 0;
-  }
-}
-            </script>
+          </script>
     </body>
 </html>
