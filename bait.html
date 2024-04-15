@@ -11,55 +11,116 @@
                     font-size: 25px;
                     color: black;
                     }
-                .wewcome{
+                #wewcome{
+                    position: absolute;
+                    left: 13%;
+                    top: 10%;
+                    width: 100%;
+                    font-size: 2.5vw;
                     color: pink;
-                    text-align: center;
                 }
-                .cover {
-                background-image: url(autismcreatureloop.gif);
-                background-size:cover;
-                background-repeat:no-repeat;
-                width:100%;
-                padding-bottom:50%;
-                margin-bottom:50px;
-                video {
-                    opacity:0;
-                    width:100%;
-                    transition: 1s;
-                    position:absolute;
-                    z-index:-1;
-                    
-                }
-                }
+                #entry{
+                    opacity: 0;              /* Standard */
 
+                    /* Older browsers */
+                    -moz-opacity: 0;         /* Older versions of Firefox */
+                    -khtml-opacity: 0;       /* Older versions of Safari */
+                    filter: alpha(opacity=0); /* Internet Explorer */
+
+                    visibility: hidden;
+                    position: absolute;
+                    left: 33%;
+                    top: 70%;
+                    width: 100%;
+                    font-size: 2.5vw;
+                    color: rgb(80, 0, 0);
+                    font-style: italic;
+                    font-family: "Times New Roman", Times, serif;
+                }
+            #video{
+                visibility: hidden;
+                position: absolute;
+                left: 50%;
+                top: 28%;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                width: 60%; 
+                z-index: -1;
+            }
+            #video1Btn{
+                position: absolute;
+                left: 50%;
+                top: 40%;
+                -webkit-transform: translateX(-50%) translateY(-50%);
+                transform: translateX(-50%) translateY(-50%);
+                width: 20%; 
+                :hover {cursor: pointer}
+
+
+            }
         </style>
     </head>
-    
     <body>
-        <div class = 'cover'> 
-            <video controls class = 'video' width = '600'>
-                            <source src="deathtoautismcreature.mp4" type="video/mp4" />
-                            <source src="audio/crushed.mp3" />
-                            <img src="autismcreatureloop.gif" id="fix">
-                     </video> 
-          </div>
-          <div class="wewcome"> <:D We're all silly lil' guys, click for some wholesome fun!</div><br>
+
+        <a id="wewcome"> <:D We're all silly lil' guys, click for some wholesome fun!</a><br>
+
+        
+
+            <video id="video" src="deathtoautismcreature.mp4" width="600">
+                <source type="video/mp4">
+                Your browser does not support HTML5 video.
+            </video>
+            <a onmouseover="" style="cursor: pointer;"><img src="autismcreatureloop.gif" id="video1Btn" onclick="loadVideo1()" value="Load Video 1" />
+            </a>
+        <u><b><a href="home.html" id="entry">Welcome to SKVIDKKKULT <img src="smiley/emoji_neffy.png" width="3%"></a></b></u> <br>
+
+        
     </body>
 
 
-
     <script>
-        $('.cover').on('click', function () {
-            $(this).children().css({
-              'z-index' : 1,
-              'opacity': 1
-            });
-          $(this).children().trigger('play');
-             
-        });
+        function loadVideo1() {
+        var videoEl = document.getElementsByTagName('video')[0];
+        var sourceEl = videoEl.getElementsByTagName('source')[0];
+        sourceEl.src = 'deathtoautismcreature.mp4';
+        videoEl.play();
+        videoEl.style.visibility = "visible"
+        videoEl.style.visibility = "visible"
+        document.getElementById("video1Btn").setAttribute("hidden", "hidden");
+        document.getElementById("entry").style.visibility = "visible"
+
+        document.getElementById("wewcome").setAttribute("hidden", "hidden");
+        var element = document.getElementById("entry");
+        FadeIn();
+        }
+
+
+
+
+    var element = document.getElementById("entry");
+    var duration = 10000; /* fade duration in millisecond */
+
+
+    function SetOpa(Opa) {
+    element.style.opacity = Opa;
+    element.style.MozOpacity = Opa;
+    element.style.KhtmlOpacity = Opa;
+    element.style.filter = 'alpha(opacity=' + (Opa * 100) + ');';
+    }
+
+    function fadeOut() {
+    for (i = 0; i <= 1; i += 0.01) {
+        setTimeout("SetOpa(" + (1 - i) +")", i * duration);
+    }
+    }
+    function FadeIn() {
         
-        $('video').on('click', function () {
-          console.log('a');
-        });
-        </script>
+    for (i = 0; i <= 1; i += 0.01) {
+        setTimeout("SetOpa(" + i +")", i * duration);
+    }
+    
+    }
+
+    </script>
+
 </html>
