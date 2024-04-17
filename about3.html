@@ -4,6 +4,7 @@
         <link rel="shortcut icon" type="x-icon" href="icon.png"/>
         <link rel="stylesheet" href="newSiteStyle.css" />
         <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
+        <script src="nav.js" type="text/javascript" defer></script>
         <style>
 
 
@@ -33,7 +34,6 @@
       bottom: 0%; 
       right: 2%;
       transform: translateX(5vh);
-      background-color: aqua;
       }
 .caesiumlol{
       display: flex;
@@ -55,6 +55,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
+  max-inline-size:none;
   min-width: 100%; 
   min-height: 100%; 
   width: auto; 
@@ -92,18 +93,10 @@
         
 
 
-
-<!--LE NAVBAR--> 
 <div class ="main_BG">
-  <header>
-    <input type="button" class="button" value="BACK
-    ↵" onclick="history.go(-1)">
-    <a>NIGGER </a>
-    <a>NIGGER </a>
-    <a>NIGGER </a>
+  <!--LE NAVBAR--> 
+  <header-component></header-component>
 
-  </header>
-  <!--MAIN!--> 
   <div class ="main">
     <div class ="main_TextBorder">
       <div class ="main_Text">

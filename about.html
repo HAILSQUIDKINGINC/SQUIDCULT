@@ -2,60 +2,74 @@
     <head>
         <title>ᛏ</title>
         <link rel="shortcut icon" type="x-icon" href="icon.png"/>
-        <link rel="stylesheet" href="SiteStyle.css" />
+        <link rel="stylesheet" href="newSiteStyle.css" />
+        <meta name="viewport" content="height=device-height, width=device-width, initial-scale=1.0, minimum-scale=1.0, target-densitydpi=device-dpi">
+        <script src="nav.js" type="text/javascript" defer></script>
         <style>
             body {
-                background-image: url(background5.gif);
+                
+                background-image: linear-gradient(
+                rgba(0, 0, 0, 0.7), 
+                rgba(0, 0, 0, 0.7)
+                ),url(background5.gif);
+                color: darkred;
             }
-            
+            hr{
+              border-color: darkred;
+            }
+            .main_TextBorder{
+            background-color: #000000;
+            border: 1px solid darkred;
+            }
+            @font-face { font-family: Evora; src: url('Evora05.otf'); } 
+      
             /* Style the button that is used to open and close the collapsible content */
-.collapsible {
-  background: transparent;
-  border: none !important;
-  cursor: pointer;
-  color: blue;
-  padding: 0px;
-}
+          .collapsible {
+            background: transparent;
+            border: none !important;
+            cursor: pointer;
+            color: blue;
+            padding: 0px;
+          }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
-.active, .collapsible:hover {
-  color: white;
-}
+          /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+          .active, .collapsible:hover {
+            color: darkblue;
+          }
 
-/* Style the collapsible content. Note: hidden by default */
-.content {
-  width: fit-content;
-  display: none;
-  overflow: hidden;
-}
-.box{
-  width: fit-content;
-  border: 1px solid white;
-  padding: 0px;
-}
-.gradbg{
-    background-image: linear-gradient(#000000, rgb(46, 0, 0));
-    text-align: center;
-    color: #ff0000;
-    border: 1px solid white;
-    font-size: 50px;
-    text-shadow:
-    0 0 7px #ff0000;
-}
-.aboutbox_quote{
-  text-align: center;
-}
-.aboutbox_paragraph{
-    padding: 30px;
-}
+          /* Style the collapsible content. Note: hidden by default */
+          .content {
+            width: fit-content;
+            display: none;
+            overflow: hidden;
+          }
+          .box{
+            width: fit-content;
+            border: 1px solid darkred;
+            padding: 0px;
+          }
+          .gradbg{
+              background-image: linear-gradient(#000000, rgb(46, 0, 0));
+              text-align: center;
+              color: #ff0000;
+              border: 1px solid darkred;
+              font-size: 3vw;
+              text-shadow:
+              0 0 7px #ff0000;
+          }
+          .aboutbox_quote{
+            text-align: center;
+          }
 
-
-
-
-
-
+          .lehitler{
+              background-color: black; float: right;
+              border: 1px solid darkred;
+              max-inline-size: 100%;
+          }
         </style>
+
     </head>
+
     <body>
         <embed src="audio/In_Lonelienes_disintegration.mp3" width="0" height="0" autostart="true" loop="true" controller="false" hidden="">
             
@@ -65,190 +79,173 @@
 
 
 
-            <div class="back">
-            <form>
-                <input type="button" class="button" value="BACK
-            ↵" onclick="history.go(-1)">
-            </form>
-            </div>
+<div class ="main_BG">
+  <!--LE NAVBAR--> 
+  <header-component></header-component>
 
-    <div class ="container"><div class ="container_text">
+  <div class ="main">
+    <div class ="main_TextBorder">
+      <div class ="main_Text">
     
-            <div class="evora"><h2>Squidcultism</h2></div> 
-            
-            <div class="col"> 
-              <!--
-                TITLE
-               -->
-               
-              <div class="gradbg"> 
-                <div class="evora"> <img src="smiley/emoji_squidcultflag.png"> NOTORIOUS SKVIDKKKULT <img src="smiley/emoji_squidcultflag.png"> </div>
-              </div>
-            
-              <!--
-                MAIN IMG
-               -->
-              <img src="img/hitlerswag.png"  width="600"> <br>
-              <div class="aboutbox_quote">We will blend all the NORMALS and suboptimalhumans<br> and spray it upon the deserts so that the rainforests may grow. </div>
+      <h2>Squidcultism</h2>
+      
+      <div class="lehitler"> 
+        <!--
+          TITLE
+          -->
+          
+        <div class="gradbg"> 
+        <img src="smiley/emoji_squidcultflag.png"> NOTORIOUS SKVIDKKKULT <img src="smiley/emoji_squidcultflag.png">
+        </div>
+      
+        <!--
+          MAIN IMG
+          -->
+        <img src="img/hitlerswag.png"  width="600"> <br>
+        <div class="aboutbox_quote">We will blend all the NORMALS and suboptimalhumans<br> and spray it upon the deserts so that the rainforests may grow. </div>
 
-              <!--
-                BASIC INFORMATION
-               -->
-              <div class="gradbg">Basic Information</div>
-              
+        <!--
+          BASIC INFORMATION
+          -->
+        <div class="gradbg">Basic Information</div>
+        
 
-              <!--
-                ALIASES BOX
-               -->
-               <div class="aboutbox_paragraph">
-                  <button type="button" class="collapsible"><b>Aliases</b></button>
-                  <div class="content">Jeffery Epstein Foot association <br>
-                    Bigotted platoon<br>
-                    Group of delinquents<br>
-                  </div> <br>
-                  <b>Alignment(s)</b>
-               </div>
-              <!--
-                IDEOLOGICAL INFORMATION
-               -->
-              <br>
-              <div class="gradbg">Ideological Information</div>
-              <div class="aboutbox_paragraph">
-                  <b>Influenced by:</b><br>
-                  <a href="https://polcompball.wiki/wiki/White_Nationalism">White Nationalism</a><br>
-                  <a href="https://polcompball.wiki/wiki/Eugenicism">Eugenicism</a><br>
-                  <a href="https://polcompball.wiki/wiki/Eco-Fascism">Eco-Facism</a><br>
-                  <a href="https://polcompball.wiki/wiki/Archeofuturism">Archaeofuturism</a><br>
-                  <a href="https://polcompball.wiki/wiki/Nazi_Transhumanism">Nazi Transhumanism</a><br>
-                  <a href="https://polcompballanarchy.miraheze.org/wiki/Burgundian_System">Burgundian System</a><br>
+        <!--
+          ALIASES BOX
+          -->
+            <button type="button" class="collapsible"><b>Aliases</b></button>
+            <div class="content">Jeffery Epstein Foot association <br>
+              Bigotted platoon<br>
+              Group of delinquents<br>
+            </div> <br>
+            <b>Alignment(s)</b>
+        <!--
+          IDEOLOGICAL INFORMATION
+          -->
+        <br>
+        <div class="gradbg">Ideological Information</div>
 
-                  
-                 
-                  
-                  
-              </div>
-              
-            </div>
-            
-            
+            <b>Influenced by:</b><br>
+            <a href="https://polcompball.wiki/wiki/White_Nationalism">White Nationalism</a><br>
+            <a href="https://polcompball.wiki/wiki/Eugenicism">Eugenicism</a><br>
+            <a href="https://polcompball.wiki/wiki/Eco-Fascism">Eco-Facism</a><br>
+            <a href="https://polcompball.wiki/wiki/Archeofuturism">Archaeofuturism</a><br>
+            <a href="https://polcompball.wiki/wiki/Nazi_Transhumanism">Nazi Transhumanism</a><br>
+            <a href="https://polcompballanarchy.miraheze.org/wiki/Burgundian_System">Burgundian System</a><br>
+
+      </div>
+      
+      
 
 
 
-            <div class ="quote"><i>"none of you can even comprehensionballs the level of holy devine dialogue i have ascended to- BEEN ascended to 
-              and continue ascending beyond even what could be considered a 'god' to you mere mortals"
-            </i><br><img src="smiley/emoji_swastiking.gif">- Squidking</div> 
-            
-            
-             Squidcult is not a mere "organization", nor is it a mere friend group intended to attact like-minded individuals, Squidcult is a single-celled organism, it is indivisible,
-             it is unbreakable, no matter how hard and how often the <h6>ENSLAVER</h6> and it's <h6>minions</h6>, attempt to break morale and output, to entrap Squidcult into an inescapable 
-             cage of perpetual psychological despair and misery, bit by bit, it is all to no avail, the Enslaver has no comprehension of how <h6>ENRAGED</h6>, <i>HATEPILLED</i> and 
-             DETERMINED even a single Squidcultist truly is, even the "weakest" regions of the unstoppable SLVDGE BEAST are indestructible, not even 6 trillion nuclear ICBM's could 
-             penetrate the outer layer of the Squidcult <h6>SLVDGEZILLA</h6>, the ENSLAVER, and it's DECEITFUL, evil <h6>JUDEN</h6> will be CRUSHED, they will be DESTROYED under a 900 ton ball 
-             forged from sheer hatred, Uberweltsfuhrer-SS God's light and BESTIAL hellfire rolling towards them at 6 GORILLION miles per hour, their FLATTENED, their CHARRED and 
-             EXHUMATED remains will be used as fertilizer for the rainforests, bushlands and other splendid natural landscapes they have RAZED, BURNED, CUT DOWN with their INDUSTRIAL 
-             entropy machinery, and their GOLEMS, the biosphere, the seed of EDEN will be fed the endless waves and waves of their charred remains, and the SWARTH-bestial SLUDGE, the 
-             SLUDGE that has entrapped Aryan civilization, it will be DEMOLISHED, bit by bit, region by region, the SLUDGE will be mercilessly burnt and fed to Eden, sacrificed to GOD.
-            
+      <p>
+      <i>"none of you can even comprehensionballs the level of holy devine dialogue i have ascended to- BEEN ascended to 
+        and continue ascending beyond even what could be considered a 'god' to you mere mortals"
+      </i><br><img src="smiley/emoji_swastiking.gif">- Squidking
+      </p>
+      <hr>
+      <p>
+      Squidcult is not a mere "organization", nor is it a mere friend group intended to attact like-minded individuals, Squidcult is a single-celled organism, it is indivisible,
+      it is unbreakable, no matter how hard and how often the ENSLAVER and its minions, attempt to break morale and output, to entrap Squidcult into an inescapable 
+      cage of perpetual psychological despair and misery, bit by bit, it is all to no avail, the Enslaver has no comprehension of how ENRAGED, HATEPILLED and 
+      DETERMINED even a single Squidcultist truly is, even the "weakest" regions of the unstoppable SLVDGE BEAST are indestructible, not even 6 trillion nuclear ICBM's could 
+      penetrate the outer layer of the Squidcult SLVDGEZILLA, the ENSLAVER, and it's DECEITFUL, evil JUDEN will be CRUSHED, they will be DESTROYED under a 900 ton ball 
+      forged from sheer hatred, Überweltsführer-ᛋᛋ God's light and BESTIAL hellfire rolling towards them at 6 GORILLION miles per hour, their FLATTENED, their CHARRED and 
+      EXHUMATED remains will be used as fertilizer for the rainforests, bushlands and other splendid natural landscapes they have RAZED, BURNED, CUT DOWN with their INDUSTRIAL 
+      entropy machinery, and their GOLEMS, the biosphere, the seed of EDEN will be fed the endless waves and waves of their charred remains, and the SWARTH-bestial SLUDGE, the 
+      SLUDGE that has entrapped Aryan civilization, it will be DEMOLISHED, bit by bit, region by region, the SLUDGE will be mercilessly burnt and fed to Eden, sacrificed to GOD.
+      </p>
+    
 
-            <div class="box">
-            <button type="button" class="collapsible"><h5>ㅤㅤㅤcøntentsㅤㅤㅤ</h5><hr></button>
-            <div class="content"><a href="#The Jews">The Jews</a><br>
-            </div></div>
-            <br>
-            
+      <div class="box">
+      <button type="button" class="collapsible"><h5>ㅤㅤㅤcøntentsㅤㅤㅤ</h5><hr></button>
+      <div class="content"><a href="#The Jews">The Jews</a><br>
+      </div></div>
+      <br>
+      
 
-   
-            Every single time i look into the mirror, i see a sludgeful abomination beast, a SWARTH-ARYAN GOD, destined to DEMOLISH and DESTROY Judea, their obliviousness can only be
-             compared to their greedy arrogance, they have no idea what is brewing in the shithole concrete realm they have built at the expense of logical, rational, GOOD people, 
-             the ARYAN race. When you PRESS DOWN on the NEO-MENSCH superior race destined to inherit the universe, for CENTURIES, it <h6>WILL</h6> bounce back right 
-             into their eye-sockets. Their intestines will constrict them when next time they feast on the harvested foreskins of the oblivious subhuman
-            GOYIM, the ACTUAL CATTLE, like a snake would when hunting a rat, and they ARE rats, they ARE vermin, and they will DIE like vermin, they will die in torment, they will 
-            die meaningless deaths, they will SUFFER to the vast ends of imagination, the last thing their UNTERMENSCH eyes will ever be able to gaze upon will be Reichsfuhrer-SS 
-            GOD smiting them out of existence
-            <br><br>
-            Squidcultism is based not on subjective political notions, but a divine, most noble cause for preservation of the Neo-Mensch race, which, objectively is the highest biological race.
-Squidcultism calls for absolute abolition of the Judaic currency which has entrapped entire civilizations in debt and seemingly inevitable spiral towards the downfall, towards chaos and the abyss, where nothing but nothingness awaits those who end up in it. And the veratlicher Juden have this in their deep-rooted biological impulse, the impulse to tear apart all that is of meaningful value and relevance thread by thread, as their minds are laden with subjective delusions, insecurities, and so fourth.
-The Jews have no remorse for life, for the biosphere --- The only thing that holds any relevance to the JEWS and the Enslaver is the materialistic output generated from remorseless enslavement of the Aryan race, DISGUSTING, VILE pornographic representation and social media platforms, all of which they have completely monopolized with their DECEITFUL, degrading tactics of saber-rattling, appeasement and lying, after all, the Jew's whole chain-system of carefully-placed threads and chains would completely crumble in a Domino Effect if  he, for some reason, halted lying. LYING is how the JUDAIC entropy machine that razes EDEN was forged in the first place, blood alone turns the wheel of history, and the JEWS completely fooled the Aryans to spill their blood for them, and thus, re-shaping history in a way that has never been seen before.
-Squidcultism is against this objective, all-enveloping evil that has swallowed humanity and the biosphere, and the only way to LIBERATE Eden and her people from such a VILE, seemingly INDESTRUCTIBLE threat, is merciless genocide, for their CHARRED carcasses will be used as FERTILIZER from which rainforests will grow from land that used to be barren wastelands of debiliating heat and despair.
-<br>
-<h4>Consciousness</h4><hr>
-           <p>Consciousness must be preserved at all costs, anything that makes you weaker is bad, things are either good or evil, it is black and white, 
-            things can be a net positive or net negative, being wishy washy with your "grey areas" that's for fluoridated retarded NPCog NORMALS.</p>
-            
+      <p>
+      Every single time i look into the mirror, i see a sludgeful abomination beast, a SWARTH-ARYAN GOD, destined to DEMOLISH and DESTROY Judea, their obliviousness can only be
+      compared to their greedy arrogance, they have no idea what is brewing in the shithole concrete realm they have built at the expense of logical, rational, GOOD people, 
+      the ARYAN race. When you PRESS DOWN on the NEO-MENSCH superior race destined to inherit the universe, for CENTURIES, it WILL bounce back right 
+      into their eye-sockets. Their intestines will constrict them when next time they feast on the harvested foreskins of the oblivious subhuman
+      GOYIM, the ACTUAL CATTLE, like a snake would when hunting a rat, and they ARE rats, they ARE vermin, and they will DIE like vermin, they will die in torment, they will 
+      die meaningless deaths, they will SUFFER to the vast ends of imagination, the last thing their ÜNTERMENSCH eyes will ever be able to gaze upon will be Reichsführer-ᛋᛋ 
+      <b><u>GOD</u></b> smiting them out of existence
+      </p>
 
-            Instead of compromising socio-political policies (Cringe pacifistic nonsense)the GOYIM (alcoholics, druggies, rapists, criminals, smokers) must ALL be slaughtered.
-            They must be blown to a trillion smithereens by the Ashkenazi trans-continental space lasers, for they serve no purpose other than satisfying the greedy and DEGENERATED desires of the KIKES, they are the absolute brainless, spineless (In the cases of druggies, literally) UNTERMENSCH.
-            It's like Heinrich Himmler from Blade Note, i mean Blade Runner, leave ONLY the giga-Aryan mega-sludgebeast Ubermensch masterminds alive, and boom, no need for laws and all of the ZOG GIB totalitarian nonsense.
-            CRUSH their skulls in with hammers, INCINERATE them alive, DESTROY the goyim, leave ONLY the UBER-goyim.
+      <p>
+      Squidcultism is based not on subjective political notions, but a divine, most noble cause for preservation of the Neo-Mensch race, which, objectively is the highest biological race.
+      Squidcultism calls for absolute abolition of the Judaic currency which has entrapped entire civilizations in debt and seemingly inevitable spiral towards the downfall, towards chaos and the abyss, where nothing but nothingness awaits those who end up in it. And the veratlicher Juden have this in their deep-rooted biological impulse, the impulse to tear apart all that is of meaningful value and relevance thread by thread, as their minds are laden with subjective delusions, insecurities, and so fourth.
+      The Jews have no remorse for life, for the biosphere --- The only thing that holds any relevance to the JEWS and the Enslaver is the materialistic output generated from remorseless enslavement of the Aryan race, DISGUSTING, VILE pornographic representation and social media platforms, all of which they have completely monopolized with their DECEITFUL, degrading tactics of saber-rattling, appeasement and lying, after all, the Jew's whole chain-system of carefully-placed threads and chains would completely crumble in a Domino Effect if  he, for some reason, halted lying. LYING is how the JUDAIC entropy machine that razes EDEN was forged in the first place, blood alone turns the wheel of history, and the JEWS completely fooled the Aryans to spill their blood for them, and thus, re-shaping history in a way that has never been seen before.
+      Squidcultism is against this objective, all-enveloping evil that has swallowed humanity and the biosphere, and the only way to LIBERATE Eden and her people from such a VILE, seemingly INDESTRUCTIBLE threat, is merciless genocide, for their CHARRED carcasses will be used as FERTILIZER from which rainforests will grow from land that used to be barren wastelands of debiliating heat and despair.
+      </p>
+
+      <p>Consciousness must be preserved at all costs, remove all substances that do damage to your conciousness (EVEN ALCOHOL) from your diet, 
+      anything that makes you weaker is inherently evil. Being wishy washy with imaginary "grey areas" is for fluoridated retarded NPCog NORMALS.
+      Instead of compromising socio-political policies (Cringe pacifistic nonsense)the GOYIM (alcoholics, druggies, rapists, criminals, smokers) must ALL be slaughtered.
+      They must be blown to a trillion smithereens by the Ashkenazi trans-continental space lasers, for they serve no purpose other than satisfying the greedy and DEGENERATED desires of the KIKES, they are the absolute brainless, spineless (In the cases of druggies, literally) ÜNTERMENSCH.
+      It's like Heinrich Himmler from Blade Note, i mean Blade Runner, leave ONLY the giga-Aryan mega-sludgebeast Übermensch masterminds alive, and boom, no need for laws and all of the ZOG GIB totalitarian nonsense.
+      CRUSH their skulls in with hammers, INCINERATE them alive, DESTROY the goyim, leave ONLY the ÜBER-goyim.
+      </p>
+
+      <p>
+      Jews want to exterminate you and eliminate your consciousness, they do this through poisoning, through media, food, water, and "medicine"
+      Do not drink fluoridated water, do NOT eat processed food, do NOT eat MSG, vegetable oil, rice, corn, soy, et cetera.
+      Don't eat at restaurants, fast food is out of the question, and if an ingredients list contains mystery factory chemicals, it's poison. 
+      Jews get their pleasure from:
+      hedonistic degeneracy (copulation not for the means of reproduction, drug use, paedophilia, et cetera)
+      demolishing humanities collective consciousness (through poison in the media, food water and air, and racemixing)
+      destroying the environment and killing nature, reforming the world into their own bleak grey structures, perverting nature out of spite (EG circumcision, transgenderism)
+      </p>
+      
 
 
-            <h4 id="The Jews">The Jews</h4><hr>
-            <p>The jews control all the media, banks, governments, companies, and the pharmaceutical industry, military industrial complex, et cetera.
-            their goal is to increase entropy. this basically means death, they want to destroy all life, and diversity, merge everything into oblivion. 
-            destroy any sense of meaning.
-            this will lead to all of humanity to becoming a mixed race, goblin creatures for them to manipulate easily, to build their pyramids and temples
-            And by pyramids i mean abortion centers, and by temples i mean Walmarts and parking lots, of course. Jews are demonic.
-            The jews are very egotistical and get a sadistic sort of pleasure out of flaunting their power, 99.9% of humanity is so retarded that they won't even notice this
-            99.9% of humanity should not exist, and should get the genocide, these subhumans contaminate the gene pool, slowly all conscious freethinking humans will disappear, 
-            this is what will happen if those who can see, do not unify to secure hyperborea, and a future for chuds, nature, and humanity in general.</p>
-            
-            <h4>Evil.</h4><hr>
-            Evil must be deleted at all costs, and if you are aware of evil, and do nothing to stop it, no matter the sacrifice, you are evil yourself, for good to prevail, action is required. the "Humans" that are incapable of free thought, with shallow personalities and morals that come entirely from what's socially expected ARE evil
-            and so they must be deleted. be a vigilante, not a system cuck 
-
-            <h4> Jews (part 2)</h4><hr>
-            Jews want to exterminate you and eliminate your consciousness, they do this through poisoning, through media, food, water, and "medicine"
-            Do not drink fluoridated water, do NOT eat processed food, do NOT eat MSG, vegetable oil, rice, corn, soy, et cetera.
-            Don't eat at restaurants, fast food is out of the question, and if an ingredients list contains mystery factory chemicals, it's poison. 
-            Jews get their pleasure from:
-            hedonistic degeneracy (copulation not for the means of reproduction, drug use, paedophilia, et cetera)
-            demolishing humanities collective consciousness (through poison in the media, food water and air, and racemixing)
-            destroying the environment and killing nature, reforming the world into their own bleak grey structures, perverting nature out of spite (EG circumcision, transgenderism)
-            <br><br>
-            Jews are the most evil thing THE EARTH has ever faced, jews are SATANIC, jews are DEMONS, and should be treated as such.
-            
-            
-
-             </p>
-
-             The mere physical attributes associated with the half-race artificially-engineered by the Enslaver should be all that is required to lead a rational, sapient being to the path of hate, 
-             or in our case, the path of determined survivalism and instinctual pattern recognition that is nowadays but taboo "hate-speak" that directly opposes the set status quo that is, in certain ways, 
-             physically crushing the backs of the hard-working kind, the aforementioned "rationals", the sapient kind who are for now partially unaltered by 
-             genetic experimentations that the Enslaver conducts upon it's subjects.
-            And bringing up the mere physical attributes, or to be more accurate - de-attributes, are enough to permeate the reality of the bestial, impulse-driven 
-            "nature" of the subhuman kind, those altered completely by the Enslaver's conduct. Through a certain set of pre-determined events, we have come to the rather unfavorable 
-            conclusion that those genetically unaltered, have been completely shifted into beings of thoughless conformance and consumption, and no regard for relevant matters, 
-            such as the aforementioned reality of the physical attributes of the genetically-altered untermensch half-race. It is thus the only solution to, bio-physically erradicate 
-            all the bio-mass that makes up this part of the population, for it is now obvious to us that they serve little to no purpose to us, other than being a mere hinderance, 
-            a weight on our already worn-out backs, cogs in the machine, if you will.
-            And it is because of this reality that we have been left with but one option, the total extirpation of the subhumans and those without a comprehensive, 
-            consistent perception, those who are cogs in the machine, those whose bio-essence of evolutionary development has degraded to mere leeching off of the fruits of 
-            Bureaucratic industrial technocracy that has enveloped all of Earth by this point.
-
-            Conversion would to most, be a seemingly obvious solution that are to promptly come up with, however, those advocating conversion are gravely mistaken in their 
-            laughably inefficient and ineffective strategy.
-            For the process of conversion to be long-lasting and meaningful to even a partial extent, it would take the most gargantuan effort and drain the most valuable time, and 
-            time, as should be obvious, is the most valuable asset we are NOT in possession of, in short, time is not on our side.
-            Those without perception are no better and no worse than the untermensch sub-race, in many ways, their mundane and status quo-centered "sub-cultures" are laden with 
-            aspects of subhumanity and subhuman ""culture"", all the aforementioned are but mere products of the Enslaver's objectively evil conduct, to create further illusion, 
-            confusion and inter-mixing, an amalgamation of differing genetic and behavioral attributes, all mashed up into one abomination of an industrial loophole, a hell for all that is splendid.
-            And it is thus foolish to even attempt utilizing the laughably ineffective method of "conversion" on the subhumans, the unoptimal sludgefest, for in their brain cortex 
-            has been ingrained the mark of the Enslaver, and it'd only create an unnecessary risk to the Neo-Mensch movement, and would only prove to hamper it's goals, be they long-term or short-term.
-
-            To be a true Squidcultist is to embrace the objective reality that the perpetual strive towards total biological perfection and optimality is but a product of nature, 
-            and natural selection will filter out all the subhuman sludge and filth once their domitor, the Enslaver perishes.
-            And a total crushing defeat is what awaits the Enslaver, for it has greatly miscalculated it's strategical outlook, underestimating the sheer determination and instinctual strive towards 
-            biological perfection, its minions, the cogs in the machine will pose little to no existing threat to a stabilized Aryan commune, for the strive of the neo-mensch is not to be underestimated.
-            Taking this reality into account, it is also factual that a victory over the Enslaver's hordes can not be achieved without a sacrifice, as, after all, history attests to this unchanged truth of 
-            rightful justice and OBLITERATION of objective evil.
-            And if it is in God's will that we are to sacrifice to us the most valuable thing, or perhaps possibly even our biological essence, then so be it, for we are willing to accept this rightful 
-            sacrifice, we are willing to have ourselves nailed to the cross if it means the greater good for all that is splendid, this is an objectively beneficial sacrifice.
-            And by this point, every Squidcultist has reached the apotheosis of determination, and ALL squidcultists are willing to accept a sacrifice if it means VICTORY over the subhuman bestial horde.
-
+      <p>
+      The mere physical attributes associated with the half-race artificially-engineered by the Enslaver should be all that is required to lead a rational, sapient being to the path of hate, 
+      or in our case, the path of determined survivalism and instinctual pattern recognition that is nowadays but taboo "hate-speak" that directly opposes the set status quo that is, in certain ways, 
+      physically crushing the backs of the hard-working kind, the aforementioned "rationals", the sapient kind who are for now partially unaltered by 
+      genetic experimentations that the Enslaver conducts upon it's subjects.
+      And bringing up the mere physical attributes, or to be more accurate - de-attributes, are enough to permeate the reality of the bestial, impulse-driven 
+      "nature" of the subhuman kind, those altered completely by the Enslaver's conduct. Through a certain set of pre-determined events, we have come to the rather unfavorable 
+      conclusion that those genetically unaltered, have been completely shifted into beings of thoughless conformance and consumption, and no regard for relevant matters, 
+      such as the aforementioned reality of the physical attributes of the genetically-altered üntermensch half-race. It is thus the only solution to, bio-physically erradicate 
+      all the bio-mass that makes up this part of the population, for it is now obvious to us that they serve little to no purpose to us, other than being a mere hinderance, 
+      a weight on our already worn-out backs, cogs in the machine, if you will.
+      And it is because of this reality that we have been left with but one option, the total extirpation of the subhumans and those without a comprehensive, 
+      consistent perception, those who are cogs in the machine, those whose bio-essence of evolutionary development has degraded to mere leeching off of the fruits of 
+      Bureaucratic industrial technocracy that has enveloped all of Earth by this point.
+      </p>
+      <p>
+      Conversion would to most, be a seemingly obvious solution that are to promptly come up with, however, those advocating conversion are gravely mistaken in their 
+      laughably inefficient and ineffective strategy.
+      For the process of conversion to be long-lasting and meaningful to even a partial extent, it would take the most gargantuan effort and drain the most valuable time, and 
+      time, as should be obvious, is the most valuable asset we are NOT in possession of, in short, time is not on our side.
+      Those without perception are no better and no worse than the üntermensch sub-race, in many ways, their mundane and status quo-centered "sub-cultures" are laden with 
+      aspects of subhumanity and subhuman ""culture"", all the aforementioned are but mere products of the Enslaver's objectively evil conduct, to create further illusion, 
+      confusion and inter-mixing, an amalgamation of differing genetic and behavioral attributes, all mashed up into one abomination of an industrial loophole, a hell for all that is splendid.
+      And it is thus foolish to even attempt utilizing the laughably ineffective method of "conversion" on the subhumans, the unoptimal sludgefest, for in their brain cortex 
+      has been ingrained the mark of the Enslaver, and it'd only create an unnecessary risk to the Neo-Mensch movement, and would only prove to hamper it's goals, be they long-term or short-term.
+      </p>
+      <p>
+      To be a true Squidcultist is to embrace the objective reality that the perpetual strive towards total biological perfection and optimality is but a product of nature, 
+      and natural selection will filter out all the subhuman sludge and filth once their domitor, the Enslaver perishes.
+      And a total crushing defeat is what awaits the Enslaver, for it has greatly miscalculated it's strategical outlook, underestimating the sheer determination and instinctual strive towards 
+      biological perfection, its minions, the cogs in the machine will pose little to no existing threat to a stabilized Aryan commune, for the strive of the neo-mensch is not to be underestimated.
+      Taking this reality into account, it is also factual that a victory over the Enslaver's hordes can not be achieved without a sacrifice, as, after all, history attests to this unchanged truth of 
+      rightful justice and OBLITERATION of objective evil.
+      And if it is in God's will that we are to sacrifice to us the most valuable thing, or perhaps possibly even our biological essence, then so be it, for we are willing to accept this rightful 
+      sacrifice, we are willing to have ourselves nailed to the cross if it means the greater good for all that is splendid, this is an objectively beneficial sacrifice.
+      And by this point, every Squidcultist has reached the apotheosis of determination, and ALL squidcultists are willing to accept a sacrifice if it means VICTORY over the subhuman bestial horde.
+      </p>
 
 
               
-              </div>
+      </div>
+    </div>
+  </div>
+</div>
 
             
             

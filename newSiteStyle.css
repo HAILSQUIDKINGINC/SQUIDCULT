@@ -4,9 +4,29 @@ body {
     font-style: normal; 
     margin: 0;
     }
+h1{
+    font-size: 3vw;
+}
+h2{
+    font-size: 2.5vw;
+}
+h3{
+    font-size: 2vw;
+}
+h4{
+    font-size: 1.5vw;
+}
+h5{
+    font-size: 1vw;
+}
+h6{
+    font-size: 0.5vw;
+}
 img {
     max-inline-size: 100%;
-    block-size: auto;
+}
+video {
+    max-inline-size: 100%;
 }
 figure{
     float: right;
@@ -14,6 +34,7 @@ figure{
 }
 
 header {
+    padding: 10px;
     display: flex;
     flex-flow: column nowrap;
     justify-content: space-evenly;
@@ -24,11 +45,13 @@ header {
     position: sticky;
     position: -webkit-sticky; /* Safari */
     z-index: 99999;
+    font-size: 10px;
     }
 .main_BG{
     display: flex;
     flex-direction: row;
     width: 100%;
+
 }
 .main{
     display: flex;
@@ -37,9 +60,9 @@ header {
     }
 .main_TextBorder{
     display: flex;
-    flex-direction: row;
     align-items: flex-start;
     background-color: #000000;
+    border: 1px solid white;
     }
 .main_Text{
     margin: 20;
@@ -69,10 +92,11 @@ flex-direction: column;
         top: auto;
         width: 100vw;
         left: 0; /* this is required for "sticky" to work */
+        padding-left: 0;
+        padding-right: 0;
     }
     .main_BG {
         flex-direction: column;
-        margin-bottom: 500px; /* to stop certain GUI elements from covering things */
     }
     .main {
         margin-top: 0;
