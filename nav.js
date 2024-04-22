@@ -5,41 +5,34 @@ class Header extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
-        <header>
-        <input
-        type="image"
-        width="64px"
-        name="btnBack"
-        id="btnBack"
-        src="widgetback.webp"
-        title="Click to go back a page."
-        onclick="history.back(); return false;">
+      <header>
+      <div id="navback" class="navbarbutton" onclick="history.back(); return false;">
+          <picture>
+              <source srcset="widgetback.webp" type="image/webp">
+              <source srcset="widgetback.gif" type="image/gif">
+              <img src="widgetback.gif" data-gallery="false">
+          </picture>
+      </div>
 
-        <input
-        type="image"
-        width="64px"
-        name="btnSearch"
-        id="btnSearch"
-        src="widgetsearch.webp"
-        title="Click to search"
-        onclick="">
 
-        <a>
-            MACROFAUNA
-        </a>
-        <a>
-            SHITHUMANS
-        </a>
 
-        <input
-        type="image"
-        width="64px"
-        name="btnContact"
-        id="btnContact"
-        src="widgetcontact.webp"
-        title="Contact information"
-        onclick="window.location.href='Contact.html'">
-        </header>
+      <div id="navcontact" class="navbarbutton" onclick="window.location.href='Contact.html'">
+          <picture>
+              <source srcset="widgetcontact.webp" type="image/webp">
+              <source srcset="widgetcontact.gif" type="image/gif">
+              <img src="widgetcontact.gif" data-gallery="false">
+          </picture>
+      </div>
+      
+      <a>
+          MACROFAUNA
+      </a>
+      <a>
+          SHITHUMANS
+      </a>
+
+
+      </header>
       `;
     }
   }
