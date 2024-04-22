@@ -5,6 +5,10 @@ class Header extends HTMLElement {
   
     connectedCallback() {
       this.innerHTML = `
+
+
+
+      
       <header>
       <div id="navback" class="navbarbutton" onclick="history.back(); return false;">
           <picture>
@@ -38,3 +42,5 @@ class Header extends HTMLElement {
   }
   
   customElements.define('header-component', Header);
+
+  

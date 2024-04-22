@@ -40,7 +40,8 @@ document.onclick = function (e) {
 
     // Close
     var leClose = document.createElement("p");
-    leClose.style = `position: absolute;
+    leClose.style = `cursor: pointer;
+    position: absolute;
     margin-left: 50vw;
     top: 0vh;
     right: 0vw;
@@ -72,7 +73,8 @@ document.onclick = function (e) {
 
     // Image
     var leImage = document.createElement("img");
-    leImage.style = `position: absolute;
+    leImage.style = `cursor: pointer;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
@@ -132,7 +134,8 @@ document.onclick = function (e) {
 
     // Left arrow
     var leLeft = document.createElement("p");
-    leLeft.style = `position: absolute;
+    leLeft.style = `cursor: pointer;
+    position: absolute;
     margin-left: auto;
     top: 0;
     bottom: 0;
@@ -172,7 +175,8 @@ document.onclick = function (e) {
 
     // Right arrow
     var leRight = document.createElement("p");
-    leRight.style = `position: absolute;
+    leRight.style = `cursor: pointer;
+    position: absolute;
     right: 0;
     top: 0;
     bottom: 0;

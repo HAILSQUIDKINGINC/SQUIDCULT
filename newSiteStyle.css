@@ -74,12 +74,12 @@ header img:hover{
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow-x: hidden
 }
 .main{
     display: flex;
     flex-flow: column nowrap;
     margin-top: 50;
+    overflow-x: hidden
     }
 .main_TextBorder{
     display: flex;
@@ -114,7 +114,6 @@ flex-direction: column;
         height: auto;
         top: auto;
         width: 100vw;
-        left: 0; /* this is required for "sticky" to work */
         padding-left: 0;
         padding-right: 0;
     }
